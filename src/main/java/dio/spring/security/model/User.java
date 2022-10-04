@@ -12,11 +12,11 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_user")
     private Integer id;
-    @Column(lenght = 50, nullable = false)
+    @Column(length  = 50, nullable = false)
     private String name;
-    @Column(lenght = 20, nullable = false)
+    @Column(length  = 20, nullable = false)
     private String username;
-    @Column(lenght = 100, nullable = false)
+    @Column(length  = 100, nullable = false)
     private String password;
     @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(name = "tab_user_roles", joinColumns = @JoinColumn(name = "user"))
