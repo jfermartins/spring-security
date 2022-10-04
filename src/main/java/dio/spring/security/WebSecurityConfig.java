@@ -23,6 +23,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated().and().formLogin();
     }
 
+   /*
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication()
@@ -33,5 +34,5 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .withUser("admin")
                 .password("{noop}master123")
                 .roles("MANAGERS");
-    }
+    }*/
 }
